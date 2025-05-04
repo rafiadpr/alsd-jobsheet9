@@ -47,7 +47,6 @@ public class StackTugasMahasiswa23 {
 
     public Mahasiswa23 peek() {
         if (!isEmpty()) {
-            System.out.println("Tugas teratas: " + stack[top].nim + " - " + stack[top].nama);
             return stack[top];
         } else {
             System.out.println("Stack kosong, tidak ada tugas untuk dinilai.");
@@ -57,7 +56,6 @@ public class StackTugasMahasiswa23 {
 
     public void print() {
         if (!isEmpty()) {
-            System.out.println("Daftar tugas yang belum dinilai:");
             for (int i = top; i >= 0; i--) {
                 System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
             }

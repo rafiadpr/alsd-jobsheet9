@@ -10,7 +10,7 @@ public class MahasiswaDemo23 {
 
         do {
             System.out.println("\n=========================");
-            System.out.println("\n Menu : ");
+            System.out.println("Menu : ");
             System.out.println("1. Mengumpulkan Tugas");
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
@@ -21,10 +21,10 @@ public class MahasiswaDemo23 {
             scan.nextLine();
             switch (pilih) {
                 case 1:
-                    System.out.print("NIM: ");
-                    String nim = scan.nextLine();
                     System.out.print("Nama: ");
                     String nama = scan.nextLine();
+                    System.out.print("NIM: ");
+                    String nim = scan.nextLine();
                     System.out.print("Kelas: ");
                     String kelas = scan.nextLine();
                     Mahasiswa23 mhs = new Mahasiswa23(nim, nama, kelas);
