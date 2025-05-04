@@ -41,6 +41,8 @@ public class MahasiswaDemo23 {
                         int nilai = scan.nextInt();
                         dinilai.tugasDinilai(nilai);
                         System.out.printf("Nilai tugas %s adalah %d\n", dinilai.nama, nilai);
+                        String biner = stack.konversiDesimalkeBiner(nilai);
+                        System.out.println("Nilai tugas dalam biner: " + biner);
                     } else {
                         System.out.println("Tidak ada tugas untuk dinilai.");
                     }
