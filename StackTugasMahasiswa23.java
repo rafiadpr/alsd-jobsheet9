@@ -55,7 +55,7 @@ public class StackTugasMahasiswa23 {
         }
     }
 
-    public void printStack() {
+    public void print() {
         if (!isEmpty()) {
             System.out.println("Daftar tugas yang belum dinilai:");
             for (int i = top; i >= 0; i--) {
