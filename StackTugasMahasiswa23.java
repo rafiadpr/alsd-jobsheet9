@@ -64,4 +64,17 @@ public class StackTugasMahasiswa23 {
             System.out.println("Stack kosong, tidak ada tugas untuk diprint.");
         }
     }
+
+    public Mahasiswa23 bottom() {
+        if (!isEmpty()) {
+            return stack[0];
+        } else {
+            System.out.println("Stack kosong.");
+            return null;
+        }
+    }
+
+    public int countTugas() {
+        return top + 1;
+    }
 }

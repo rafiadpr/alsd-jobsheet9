@@ -14,7 +14,9 @@ public class MahasiswaDemo23 {
             System.out.println("1. Mengumpulkan Tugas");
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
-            System.out.println("4. Melihat Daftar Tugas ");
+            System.out.println("4. Melihat Daftar Tugas");
+            System.out.println("5. Melihat Tugas Pertama yang Dikirim");
+            System.out.println("6. Jumlah Tugas yang Terkumpul");
             System.out.println("0. Keluar");
             System.out.print("Pilih: ");
             pilih = scan.nextInt();
@@ -55,6 +57,17 @@ public class MahasiswaDemo23 {
                     System.out.println("Daftar semua tugas");
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
+                    break;
+                case 5:
+                    Mahasiswa23 pertama = stack.bottom();
+                    if (pertama != null) {
+                        System.out.println("Tugas pertama dikumpulkan oleh " + pertama.nama);
+                    } else {
+                        System.out.println("Belum ada tugas yang dikumpulkan.");
+                    }
+                    break;
+                case 6:
+                    System.out.printf("Total tugas yang sudah dikumpulkan: %d\n", stack.countTugas());
                     break;
                 case 0:
                     System.out.println("Terima kasih!");
